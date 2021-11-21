@@ -1,0 +1,462 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+
+body {
+	background: #FFF;
+	font-family: Calibri, Verdana, helvetica, sans-serif;
+	font-size: 14px;
+}
+
+input, select, textarea {
+	padding: 8px;
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: #888;
+	text-decoration: none;
+}
+
+.disabled {
+	color: #3366ff;
+	font-weight: bold;
+}
+
+.limpar {
+	clear: both;
+}
+
+.conteudo {
+	background: #FFF;
+	width: 1280px;
+	position: relative;
+	margin-top: 20px;
+	margin-left: -640px; /* ou seja, ((1280 / 2)*-1) */
+	left: 50%;
+}
+
+.topo1 {
+	color: #FFF;
+	background: #6B8E23;
+	height: 50px;
+	padding-top: 8px;
+	padding-left: 5px;
+}
+
+.topo2 {
+	background: #1F2739;
+	height: 90px;
+	padding: 10px;
+	border-bottom: 10px solid #CCC;
+	margin-bottom: 20px;
+}
+
+.topo2 .w {
+	color: #DDD;
+	font-size: 18px;
+	font-weight: bold;
+	width: 200px;
+	position: absolute;
+	right: 0;
+}
+
+.logo-home {
+	background: url("../imagens_admin/flecha.png") no-repeat;
+	width: 202px;
+	height: 99px;
+	float: left;
+	margin-left: 2%;
+}
+
+.menu {
+	background: #FFF;
+	width: 230px;
+	float: left;
+	border: solid 1px #DDD;
+	margin-right: 1.3%;
+	margin-left: 0%;
+}
+
+.menu h2 {
+	color: #FFF;
+	background: #185875;
+	display: block;
+	padding: 10px 10px;
+	font-weight: 400;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.menu ul {
+	height: auto;
+}
+
+.menu ul li {
+	border-bottom: solid 1px #DDD;
+	padding: 5px 0;
+	/*text-transform: uppercase;*/
+}
+
+.menu ul li a {
+	display: block;
+	padding: 5px 28px;
+	font-size: 18px;
+	color: #888;
+}
+
+.menu ul li a:hover {
+	color: #000;
+}
+
+.corpo {
+	background: #FFF;
+	width: 80%;
+	min-height: 600px;
+	float: right;
+	border: solid 1px #DDD;
+	padding: 0px;
+	margin-right: 0px;
+}
+
+.corpo h2 {
+	color: #FFF;
+	display: block;
+	background: #185875;
+	border-bottom: solid 1px #DDD;
+	/*padding: 30px 10px 0 0;*/
+	padding: 10px 10px;
+	font-weight: 400;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.corpo h3 {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 70px;
+	color: #000;
+	display: block;
+	background: #FFF;
+	border-top: solid 1px #DDD;
+	border-bottom: solid 1px #DDD;
+	font-weight: 400;
+	font-size: 1.9em;
+	text-align: left;
+}
+
+.home {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.icone {
+	width: 400px;
+	height: 193px;
+	font-size: 18px;
+	float: left;
+	border: solid 1px #DDD;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 20px;
+	background: #FFF;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	margin-left: 75px;
+}
+
+.icone p {
+	padding-top: 10px;
+}
+
+.but-cadastro a {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	width: 200px;
+	display: block;
+	background: #185875;
+	color: #FFF;
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.but-cadastro a:hover {
+	background: #3CB371;
+	color: #fff;
+}
+
+.lista {
+	margin-top: 10px;
+}
+
+.lista table {
+	width: 100%;
+}
+
+.lista table td {
+	padding: 3px 3px;
+	font-size: 16px;
+	border-bottom: solid 1px #DDD;
+}
+
+
+
+
+.lista .stVerm {
+	background: #FF6347;
+	color: #000;
+}
+
+.lista .stAmar {
+	background: #FFF68F;
+	color: #000;
+}
+
+.lista .stLar {
+	background: #BA55D3;
+	color: #000;
+}
+
+.lista .stVerd {
+	background: #A2CD5A;
+	color: #000;
+}
+
+.lista .stBran {
+	background: #FFF;
+	color: #000;
+}
+
+
+
+
+.lista table tr:hover {
+	background: #F2F2F2;
+}
+
+.lista .titulo {
+	background: #DDD;
+}
+
+.lista .titulo td {
+	border-right: 1px solid #CCC;
+	font-weight: bold;
+	color: #222;
+	padding: 10px 0;
+}
+
+.lista .but-acao a {
+	display: block;
+	background: #185875;
+	color: #FFF;
+	text-align: center;
+	padding: 8px;
+	font-size: 15px;
+	border-radius: 5px;
+	min-width: 70px;
+	font-weight: bold;
+}
+
+.lista .but-acao a:hover {
+	background: #3CB371;
+	color: #fff;
+}
+
+.paginacao {
+	width: 100%;
+	padding: 1px;
+	color: #0076A3;
+	text-align: center;
+	font-size: 18px;
+}
+
+.formulario-cab {
+	width: 98%;
+	margin-left: 8px;
+}
+
+.formulario-cab label {
+	margin-top: 3px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.formulario-cab form {
+	margin-top: 10px;
+}
+
+.formulario-cab input, select {
+	width: 50%;
+	background: #FBFBFB;
+	border: solid 1px #DDD;
+}
+
+.formulario-cab .col0010 {
+	margin-left: 0px;
+	width: 10%;
+	float: left;
+}
+
+.formulario-cab .col1515 {
+	margin-left: 15px;
+	width: 15%;
+	float: left;
+}
+
+.formulario-cab .col1065 {
+	margin-left: 10px;
+	width: 65%;
+	float: left;
+}
+
+.formulario-cab .col4 {
+	background: #FFFFFF url("../imagens_admin/lupa_.png") left no-repeat;
+	display: block;
+	float: right;
+	border: solid 5px #FFF;
+	width: 40px;
+	font-size: 15px;
+	color: #000;
+	cursor: pointer;
+}
+
+.formulario {
+	width: 98%;
+	margin-left: 8px;
+}
+
+.formulario form {
+	margin-top: 10px;
+}
+
+.formulario label {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: #000000;
+	font-size: 18px;
+}
+
+.formulario input, select {
+	width: 100%;
+	background: #FBFBFB;
+	border: solid 1px #DDD;
+}
+
+.formulario .but-salvar {
+	width: 150px;
+	background: #185875;
+	border: none;
+	cursor: pointer;
+	color: #FFF;
+	padding: 10px 0;
+	font-size: 1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.formulario .but-salvar:hover {
+	background: #3CB371;
+	color: #fff;
+}
+
+.formulario .but-cancelar a {
+	width: 150px;
+	float: left;
+	background: #185875;
+	border: none;
+	cursor: pointer;
+	color: #FFF;
+	padding: 10px 0;
+	font-size: 1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.formulario .but-cancelar a:hover {
+	background: #3CB371;
+	color: #fff;
+}
+
+.formulario .col0 {
+	width: 10%;
+	float: left;
+}
+
+.formulario .col00 {
+	width: 88%;
+	float: right;
+}
+
+.formulario .col1 {
+	width: 49%;
+	float: left;
+}
+
+.formulario .col2 {
+	width: 49%;
+	float: right;
+}
+
+.rodape {
+	background: #185875;
+	height: 90px;
+	border-top: 10px solid #CCC;
+	text-align: center;
+	color: #FFF;
+	margin-top: 20px;
+}
+
+.rodape p {
+	padding-top: 30px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.logo-rodape {
+	background: url("../imagens_admin/rodapeX.png") no-repeat;
+	margin: 0 auto 0 auto;
+	display: block;
+	width: 243px;
+	height: 66px;
+}
+
+.bt {
+border:1px solid #25692A;
+border-radius:4px;
+display:inline-block;
+cursor:pointer;
+font-family:Verdana;
+font-weight:bold;
+font-size:13px;
+padding:6px 10px;
+text-decoration:none;
+} 
+
+
+.bt-lj {
+border-color:#eb9b48;
+background:linear-gradient(to bottom, #f7d6b3 5%, #eb9b48 100%);
+box-shadow:inset 0px 1px 0px 0px #fdf7f0;
+color:#333;
+text-shadow:0px 1px 0px #ffee66;
+}
