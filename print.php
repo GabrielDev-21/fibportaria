@@ -59,7 +59,7 @@
 			$pdf->Cell(10,20,":",0,0,'L');
 			$pdf->Cell(00,20,date("d-m-Y   H:i:s",strtotime($linha["data_sai"])),0,0,'L');
 			$pdf->Ln(11);
-			$pdf->Cell(50,20,"Docto",0,0,'L');
+			$pdf->Cell(50,20,"Nota",0,0,'L');
 			$pdf->Cell(10,20,": ",0,0,'L');
 			$pdf->Cell(00,20,$linha["docto"],0,0,'L');
 			$pdf->Ln(11);
@@ -79,10 +79,6 @@
 			$pdf->Cell(10,20,":",0,0,'L');
 			$pdf->Cell(00,20,$linha["cpf"],0,0,'L');
 			$pdf->Ln(11);
-			//$pdf->Cell(50,20,"Veiculo",0,0,'L');
-			//$pdf->Cell(10,20,":",0,0,'L');
-			//$pdf->Cell(00,20,$linha["veiculo"],0,0,'L');
-			//$pdf->Ln(11);
 			$pdf->Cell(50,20,"Placa",0,0,'L');
 			$pdf->Cell(10,20,":",0,0,'L');
 			$pdf->Cell(00,20,$linha["placa"],0,0,'L');

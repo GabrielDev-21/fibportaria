@@ -2,7 +2,7 @@
 	@$id 	= $_GET["id"];
 	@$acao	= $_GET["acao"];
 	@$ordem	= $_GET["ordem"];
-		
+
 	$portaria 	= select("portaria", "id = $id");
 
 	$nome 		= $portaria[0]["nome"];

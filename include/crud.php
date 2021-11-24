@@ -12,6 +12,7 @@
 		@mysqli_close($conexao) or die (@mysqli_error($conexao));
 	}
 
+
 	function execute ($sql, $id = false) {
 		$conexao = open();
 		$qry = @mysqli_query($conexao, $sql) or die(@mysqli_error($conexao));
