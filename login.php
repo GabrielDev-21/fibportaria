@@ -1,21 +1,18 @@
 <?php
 session_start();
-// include "conexao.php";
-require("include/crud.php");
-
+include('conexao.php');
  
 if(empty($_POST['usuario']) || empty($_POST['senha'])) {
 	header('Location: index.php');
 	exit();
 }
-
-$conn = open();
-$usuario = mysqli_real_escape_string($conn, $_POST['usuario']);
-$senha = mysqli_real_escape_string($conn, $_POST['senha']);
-
+ 
+$usuario = mysqli_real_escape_string($conexao, $_POST['usuario']);
+$senha = mysqli_real_escape_string($conexao, $_POST['senha']);
+ 
 $query = "select usuario from user where usuario = '{$usuario}' and senha = md5('{$senha}')";
  
-$result = mysqli_query($conn, $query);
+$result = mysqli_query($conexao, $query);
  
 $row = mysqli_num_rows($result);
  

@@ -1,4 +1,8 @@
 <?php
+	define("SERVIDOR", "localhost");
+	define("USUARIO", "root");
+	define("SENHA", "");
+	define("BANCO", "fib");
 	define("CHARSET", "utf8");
 	define("NRLINHAS", 30);
 	define("SESSAOFIB", "FIBPORTARIA");
