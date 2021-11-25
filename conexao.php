@@ -10,5 +10,3 @@ $conection = pg_connect($infos_string) or
 die ("NÃO FOI POSSIVEL CONECTAR AO SERVIDOR");
 
 ?>
-
-?>
