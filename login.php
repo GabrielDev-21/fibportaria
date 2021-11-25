@@ -1,7 +1,7 @@
 <?php
 session_start();
 require("include/crud.php");
-//include('conexao.php');
+
  
 if(empty($_POST['usuario']) || empty($_POST['senha'])) {
 	header('Location: index.php');
