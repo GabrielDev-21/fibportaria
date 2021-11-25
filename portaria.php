@@ -1,6 +1,4 @@
 <?php
-require_once "valida_cpf.php";
-
 	@$id 	= $_GET["id"];
 	@$acao	= $_GET["acao"];
 	@$ordem	= $_GET["ordem"];
