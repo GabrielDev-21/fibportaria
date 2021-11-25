@@ -1,9 +1,6 @@
 <?php
 	function open() {
-		//$conexao = @mysqli_connect(SERVIDOR, USUARIO, SENHA, BANCO) or die(mysqli_connect_error());
-		$envPath = realpath(dirname(__FILE__). '/env.ini');
-    	$env = parse_ini_file($envPath);
-    	$conexao = new mysqli($env['DB_HOST'],$env['DB_USER'],$env['DB_SENHA'],$env['DB_NAME']) or die(mysqli_connect_error());;
+		$conexao = @mysqli_connect(SERVIDOR, USUARIO, SENHA, BANCO) or die(mysqli_connect_error());
 		@mysqli_set_charset($conexao, CHARSET);
 		return $conexao;
 	}
@@ -11,7 +8,6 @@
 	function close($conexao) {
 		@mysqli_close($conexao) or die (@mysqli_error($conexao));
 	}
-
 
 	function execute ($sql, $id = false) {
 		$conexao = open();
